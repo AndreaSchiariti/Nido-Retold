@@ -1,0 +1,48 @@
+{
+  "name": "nido-retold-server",
+  "version": "1.0.0",
+  "description": "nido retold backend",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "node dist/server.js",
+    "dev": "concurrently -k \"npx tsc --watch\" \"wait-on dist/server.js && nodemon dist/server.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreaSchiariti/Nido-Retold.git"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "Andrea Schiariti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreaSchiariti/Nido-Retold/issues"
+  },
+  "homepage": "https://github.com/AndreaSchiariti/Nido-Retold#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-async-errors": "^3.1.1",
+    "morgan": "^1.10.0",
+    "pg-promise": "^11.10.1",
+    "tsconfig-paths": "^4.2.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.7.6",
+    "@types/pg-promise": "^0.0.28",
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "wait-on": "^8.0.1"
+  },
+  "type": "module"
+}
