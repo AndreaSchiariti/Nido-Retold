@@ -1,0 +1,84 @@
+//Here are stored all the classes bounded to the buttons
+@use "../utils/mixins" as *;
+
+.button {
+  position: relative;
+  padding: 15px 30px;
+  border-radius: 100px;
+  font-family: cardo;
+  background-color: transparent;
+  z-index: 2;
+
+  &:hover,
+  &:focus {
+    border-color: transparent;
+  }
+
+  .button-icon {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.button-no-bg {
+  position: relative;
+  aspect-ratio: 4/4;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    border-color: transparent;
+    outline: none;
+
+    .inner-button-no-bg {
+      inset: -5px;
+    }
+  }
+}
+
+.inner-button-no-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  transition: inset 0.1s linear;
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.navbar-button {
+  @include button-background(
+    var(--nav-button-light),
+    var(--nav-button-dark),
+    var(--nav-button-border)
+  );
+
+  color: var(--nav-button-font);
+  font-size: 1.3rem;
+  gap: 15px;
+}
+
+.button-games-carousel {
+  width: 4%;
+}
+
+.home-sheet-button {
+  @include button-background(var(--white), var(--white), var(--white));
+  
+  padding: 5px 150px;
+  font-family: cardo-bold;
+  color: var(--black);
+  font-size: 2.3rem;
+}
+
+.home-world-button {
+  @include button-background(var(--black), var(--black), var(--black));
+  padding: 5px 80px;
+  color: var(--white);
+  font-size: 2.3rem;
+}

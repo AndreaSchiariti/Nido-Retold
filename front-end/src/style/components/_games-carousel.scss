@@ -1,0 +1,26 @@
+.games-carousel {
+    width: 100%;
+    gap: 10px;
+}
+
+.games-images {
+ width: 90%;
+ overflow: hidden;
+
+
+ img {
+    object-fit: cover;
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+ }
+}
+
+.games-carousel-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(50% - 20px);
+    gap: 40px;
+    transition: translate 0.3s linear;
+    
+}

@@ -1,0 +1,22 @@
+@mixin button-background ($top-color, $bottom-color, $border-color) {
+    &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(
+      to bottom,
+      $top-color,
+      $bottom-color
+    );
+    border-color: $border-color;
+    z-index: -1;
+    transition: inset 0.1s linear;
+  }
+
+  &:hover {
+    &::before {
+        inset: -5px;
+        }
+    }
+}

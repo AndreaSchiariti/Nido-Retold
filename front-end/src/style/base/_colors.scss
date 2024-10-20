@@ -1,0 +1,22 @@
+:root {
+  --mainHome: #131d24;
+  --nav-shade-light: #fde5b3;
+  --nav-shade-dark: #f0c28b;
+  --nav-line: #eac38c;
+  --nav-selected: #523a19;
+  --nav-font: #ac8c61;
+  --nav-button-light: #a7bfb5;
+  --nav-button-dark: #698876;
+  --nav-button-border: #698876;
+  --nav-button-font: #edf3f0;
+  --black: black;
+  --white: white;
+}
+
+.white-text {
+  color: var(--white);
+}
+
+.black-text {
+  color: var(--black);
+}
