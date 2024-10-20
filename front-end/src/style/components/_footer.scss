@@ -1,0 +1,35 @@
+.footer {
+  width: 100vw;
+}
+
+.footer-content {
+  width: 100%;
+  padding: 60px 3%;
+  background: linear-gradient(
+    to bottom,
+    var(--nav-shade-light),
+    var(--nav-shade-dark)
+  );
+}
+
+.footer-content-start {
+    width: 50%;
+    font-size: 1.5rem;
+
+    h3 {
+        font-family: playfair;
+        font-size: 2.5rem;
+    }
+}
+
+.footer-about-us, .footer-links {
+    width: 40%;
+    gap: 20px;
+}
+
+.footer-rights {
+    width: 100vw;
+    padding: 10px;
+    background-color: var(--mainHome);
+    color: var(--white);
+}

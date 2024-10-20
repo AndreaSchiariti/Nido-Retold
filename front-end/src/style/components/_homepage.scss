@@ -1,0 +1,130 @@
+.homepage {
+  width: 100vw;
+  min-height: 100vh;
+  
+}
+
+.top-image {
+  width: 100%;
+  height: auto;
+}
+
+.home-about-nido {
+  position: relative;
+  width: 100vw;
+  padding: 40px 10% 80px 10%;
+  gap: 20px;
+  color: var(--white);
+  background-color: var(--mainHome);
+
+  h1 {
+    font-family: playfair;
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    text-align: center
+  };
+}
+
+.home-about-decoration {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  width: 100vw;
+ 
+  img {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+  }
+}
+
+.home-about-logo {
+  position: absolute;
+  width: 10%;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.home-games-list {
+    width: 100%;
+    padding: 100px 2%;
+    gap: 30px;
+
+    h2 {
+        font-family: playfair;
+        font-size: 2rem;
+        color: var(--black);
+    }
+}
+
+.home-sheet-creation {
+    position: relative;
+    width: 100%;
+    padding: 200px 10%;
+    overflow: hidden;
+}
+
+.home-sheet-content {
+    width: 35%;
+    gap: 30px;
+}
+
+.home-content-text {
+    gap: 10px;
+
+    h2 {
+        font-family: playfair;
+        font-size: 2.9rem;
+        text-align: center;
+        line-height: 3.2rem;
+    }
+
+    p {
+        width: 87%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+.home-sheet-bg {
+    inset: 0;
+    z-index: -3;
+}
+
+.home-mordenkainen {
+    height: 120%;
+    top: 18%;
+    left: 23%;
+    z-index: -1;
+}
+
+.home-sheets-img {
+    height: 85%;
+    left: 3%;
+    z-index: -2;
+}
+
+.home-world {
+    position: relative;
+    width: 100vw;
+    padding: 170px 8%;
+    overflow: hidden;
+}
+
+.home-world-content {
+ width: 40%;
+ gap: 30px;
+}
+
+.home-world-img {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 120%;
+}
